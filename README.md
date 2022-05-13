@@ -1,6 +1,6 @@
-# Turborepo starter with npm
+# Rifumo Investments
 
-This is an official starter turborepo.
+This is a turborepo monorepo.
 
 ## What's inside?
 
