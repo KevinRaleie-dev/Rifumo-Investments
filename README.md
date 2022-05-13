@@ -8,9 +8,9 @@ This turborepo uses [npm](https://www.npmjs.com/) as a package manager. It inclu
 
 ### Apps and Packages
 
-- `docs`: a [Next.js](https://nextjs.org) app
-- `web`: another [Next.js](https://nextjs.org) app
-- `ui`: a stub React component library shared by both `web` and `docs` applications
+- `membership`: a [Next.js](https://nextjs.org) app that's going to be used to build the membership forms
+- `web`: another [Next.js](https://nextjs.org) app that's going to be used to build out the Rifumo website
+- `ui`: a stub React component library shared by both `web` and `membership` applications
 - `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
 
@@ -32,7 +32,7 @@ This repository is used in the `npx create-turbo@latest` command, and selected w
 
 To build all apps and packages, run the following command:
 
-```
+```bash
 cd my-turborepo
 npm run build
 ```
@@ -41,7 +41,7 @@ npm run build
 
 To develop all apps and packages, run the following command:
 
-```
+```bash
 cd my-turborepo
 npm run dev
 ```
@@ -52,7 +52,7 @@ Turborepo can use a technique known as [Remote Caching (Beta)](https://turborepo
 
 By default, Turborepo will cache locally. To enable Remote Caching (Beta) you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
 
-```
+```bash
 cd my-turborepo
 npx turbo login
 ```
@@ -61,7 +61,7 @@ This will authenticate the Turborepo CLI with your [Vercel account](https://verc
 
 Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your turborepo:
 
-```
+```bash
 npx turbo link
 ```
 
