@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const Nav = () => {
   return (
-    <div className='w-screen bg-[#06070E] text-white top-0 sticky z-10 flex flex-row justify-between items-center py-5 sm:px-32 px-5 '>
+    <div className='w-screen bg-white text-black top-0 sticky z-10 flex flex-row justify-between items-center py-5 sm:px-32 px-5 '>
       <div>
         <h1 className='text-xl font-black'>
           Rifumo Investments.

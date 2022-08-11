@@ -15,25 +15,25 @@ export const TeamCard = ({
     teamMemberBio,
  }: TeamCardProps) => {
   return (
-    <div className="flex flex-col space-y-3 items-center justify-center mb-10">
+    <div className="flex flex-col px-10 py-8 shadow-md rounded-3xl  border-[1px] space-y-3 justify-start mb-10">
         <div>
             <Image
             className="rounded-full"
             objectFit='cover'
             alt="team member image"
             src={imageSrc}
-            width={150}
-            height={150}
+            width={80}
+            height={80}
             />
         </div>
-        <div className="flex flex-col space-y-2 items-center justify-center text-center">
-            <h3 className="text-xl font-medium">
+        <div className="flex flex-col space-y-3 justify-start ">
+            <h3 className="text-xl font-black">
                 {teamMemberName}
             </h3>
-            <p className="font-light">
+            <p className="font-normal">
                 {teamMemberRole}
             </p>
-            <p className="italic text-sm max-w-sm text-center text-gray-600">
+            <p className="text-sm max-w-sm leading-loose text-gray-500">
                 {teamMemberBio}
             </p>
         </div>

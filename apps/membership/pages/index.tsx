@@ -1,21 +1,13 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import { useRouter } from 'next/router';
 import React from 'react';
 
-import { FiChevronRight } from 'react-icons/fi';
 import { Nav } from '../components/Nav';
 import { TeamCard } from '../components/TeamCard';
 
 
 export default function Membership() {
-  const router = useRouter()
 
-  const handleFormSubmit = (event: React.FormEvent) => {
-    event.preventDefault();
-    router.push('/forms/membership')
-    console.log('submitting form');
-  }
   return (
     <React.Fragment>
       <Head>
@@ -44,7 +36,7 @@ export default function Membership() {
             </p>
             <div className="w-full h-auto relative">
               <Image
-              className='rounded-md mt-5'           
+              className='rounded-2xl mt-5'           
               alt="product image"
               objectFit='cover'          
               width="1200"
@@ -60,7 +52,7 @@ export default function Membership() {
             <p className="text-center mt-2 text-gray-500 font-light">
               Building together, Prospering together. 
             </p>
-            <div className="grid sm:grid-cols-2 gap-10 mt-20">
+            <div className="grid sm:grid-cols-2 sm:gap-2 gap-10 mt-20">
               <div className='flex flex-col space-y-3'>
                 <h3 className='text-3xl font-medium'>
                   Our Story
@@ -82,7 +74,7 @@ export default function Membership() {
               <div className="w-auto sm:h-auto h-64 relative">
                 <Image
                 objectFit='cover'
-                className='rounded-md'
+                className='rounded-2xl'
                 layout='fill'
                 alt="holding hands"
                 src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
@@ -95,7 +87,7 @@ export default function Membership() {
               What We Stand For
             </h2>
           </div>
-          <section className='grid sm:grid-cols-3 sm:gap-10 sm:py-10'>
+          <section className='grid sm:grid-cols-3 sm:gap-10 gap-10 sm:py-10'>
             <div className="flex flex-col space-y-3 h-auto">
               <h4 className="text-2xl font-medium">
                 Mission
@@ -150,7 +142,7 @@ export default function Membership() {
           </section>
           <section className="mt-10">
             <div className="text-center space-y-2" id="team">
-              <h1 className="text-5xl font-medium">
+              <h1 className="text-5xl font-bold">
                 Meet The Team
               </h1>
               <p className="font-light text-gray-500">
@@ -162,7 +154,7 @@ export default function Membership() {
               imageSrc='/chairman.jpeg'
               teamMemberName='Khabhira Phephetha'
               teamMemberRole='Chairman'
-              teamMemberBio='Bcom Accounting Final student. Khabhira Phephetha is a young leader with both national and international leadership experience and training who aspires to be a servant leader that delivers at all times.              '
+              teamMemberBio='Bcom Accounting Final year student. Khabhira Phephetha is a young leader with both national and international leadership experience and training who aspires to be a servant leader that delivers at all times.              '
               />
               <TeamCard 
               imageSrc='/Ntshepiseng.jpg'
