@@ -196,23 +196,6 @@ export default function Membership() {
               teamMemberBio=" A professional educator in Intermediate Phase from a small town, Ladysmith in KZN. I am currently working as a teacher in Randburg, South Africa. My ambition is to help more disadvantageous young people from the shackles of poverty, lack of information and not being in control."
               />
             </div>
-            <div>
-              <div className="space-y-2">
-                <h1 className="text-5xl font-medium">
-                  Mentor
-                </h1>     
-                <p className="text-2xl">
-                  Mr. Itumeleng Moses.
-                </p>
-                <p className="max-w-lg sm:text-md">
-                  Itumeleng is a solid individual with postgraduate qualifications and 22 years of work experience across various sectors, 
-                  including academia, consulting, executive management in public sector in 3 different provinces as well as financial sector.
-                </p>
-                <p className="max-w-lg sm:text-md">
-                  He is currently employed as banking a executive, heading 3 business units across 3 different provinces.
-                </p>
-              </div>
-            </div>
           </section>
           <div className="flex flex-col items-center space-y-5 text-center mt-36 p-10 w-full rounded-2xl bg-[#011638] mb-10">
             <h1 className="text-3xl sm:text-6xl font-bold text-white">
